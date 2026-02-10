@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ssau.vyashka.labs.javafx.controller.CalcController">
+   <children>
+      <Pane layoutX="0.0" prefHeight="350.0" prefWidth="350.0">
+         <children>
+
+            <Label fx:id="label" alignment="CENTER" layoutX="75.0" layoutY="14.0" prefHeight="50.0" prefWidth="200.0" text="Result" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+
+                                                       <!--ОПЕРАЦИИ-->
+            <Button fx:id="bPlus" focusTraversable="false" layoutX="225.0" layoutY="225.0" mnemonicParsing="false" onAction="#onPlusClick" prefHeight="50.0" prefWidth="50.0" text="+">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bMinus" focusTraversable="false" layoutX="225.0" layoutY="175.0" mnemonicParsing="false" onAction="#onMinusClick" prefHeight="50.0" prefWidth="50.0" text="-">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bDivide" focusTraversable="false" layoutX="225.0" layoutY="75.0" mnemonicParsing="false" onAction="#onDivideClick" prefHeight="50.0" prefWidth="50.0" text="/">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bMultiply" focusTraversable="false" layoutX="225.0" layoutY="125.0" mnemonicParsing="false" onAction="#onMultiplyClick" prefHeight="50.0" prefWidth="50.0" text="*">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+
+            <Button fx:id="bPower" focusTraversable="false" layoutX="175.0" layoutY="75.0" mnemonicParsing="false" onAction="#onPowerClick" prefHeight="50.0" prefWidth="50.0" text="^">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bSqrt" focusTraversable="false" layoutX="125.0" layoutY="75.0" mnemonicParsing="false" onAction="#onSqrtClick" prefHeight="50.0" prefWidth="50.0" text="√">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+                                                   <!--СИСТЕМНЫЕ КНОПКИ-->
+            <Button fx:id="bComma" focusTraversable="false" layoutX="175.0" layoutY="275.0" mnemonicParsing="false" onAction="#onDigitClick" prefHeight="50.0" prefWidth="50.0" text=",">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bEqual" focusTraversable="false" layoutX="225.0" layoutY="275.0" mnemonicParsing="false" onAction="#onEqualClick" prefHeight="50.0" prefWidth="50.0" text="=">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bClear" focusTraversable="false" layoutX="75.0" layoutY="75.0" mnemonicParsing="false" onAction="#onClearClick" prefHeight="51.0" prefWidth="50.0" text="C">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+                                                        <!--ЧИСЛА-->
+            <Button fx:id="bZero" focusTraversable="false" layoutX="125.0" layoutY="275.0" mnemonicParsing="false" onAction="#onDigitClick" prefHeight="50.0" prefWidth="50.0" text="0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bOne" focusTraversable="false" layoutX="75.0" layoutY="225.0" mnemonicParsing="false" onAction="#onDigitClick" prefHeight="50.0" prefWidth="50.0" text="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bTwo" focusTraversable="false" layoutX="125.0" layoutY="225.0" mnemonicParsing="false" onAction="#onDigitClick" prefHeight="50.0" prefWidth="50.0" text="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bThree" focusTraversable="false" layoutX="175.0" layoutY="225.0" mnemonicParsing="false" onAction="#onDigitClick" prefHeight="50.0" prefWidth="50.0" text="3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bFour" focusTraversable="false" layoutX="75.0" layoutY="175.0" mnemonicParsing="false" onAction="#onDigitClick" prefHeight="50.0" prefWidth="50.0" text="4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bFive" focusTraversable="false" layoutX="125.0" layoutY="175.0" mnemonicParsing="false" onAction="#onDigitClick" prefHeight="50.0" prefWidth="50.0" text="5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bSix" focusTraversable="false" layoutX="175.0" layoutY="175.0" mnemonicParsing="false" onAction="#onDigitClick" prefHeight="50.0" prefWidth="50.0" text="6">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bSeven" focusTraversable="false" layoutX="75.0" layoutY="125.0" mnemonicParsing="false" onAction="#onDigitClick" prefHeight="50.0" prefWidth="50.0" text="7">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bEight" focusTraversable="false" layoutX="125.0" layoutY="125.0" mnemonicParsing="false" onAction="#onDigitClick" prefHeight="50.0" prefWidth="50.0" text="8">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="bNine" focusTraversable="false" layoutX="175.0" layoutY="125.0" mnemonicParsing="false" onAction="#onDigitClick" prefHeight="50.0" prefWidth="50.0" text="9">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
